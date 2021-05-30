@@ -1,4 +1,3 @@
-import {  HttpRequestTest,ContextTest,HttpResponseTest } from './index';
 
 import { Context, HttpRequest } from "@azure/functions"
 
