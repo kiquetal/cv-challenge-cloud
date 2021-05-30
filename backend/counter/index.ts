@@ -37,4 +37,26 @@ const httpTrigger: AzureFunction = async function (context: Context, req: HttpRe
 
 };
 
+
+export interface HttpResponseTest {
+  status: number;
+  body: string;
+}
+
+export interface HttpRequestTest {
+  body: {
+    name?: string,
+  };
+  query: {
+    name?: string,
+  };
+}
+
+
+
+export interface ContextTest {
+  log: (...message: any[]) => void;
+  done: (err: Error | null, res: HttpResponseTest) => void;
+}
+
 export default httpTrigger;

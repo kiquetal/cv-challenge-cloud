@@ -8,7 +8,7 @@
     "prestart": "npm run build && func extensions install",
     "start:host": "func start",
     "start": "npm-run-all --parallel start:host watch",
-    "test": "echo \"No tests yet...\""
+    "test": "jest"
   },
   "description": "",
   "devDependencies": {
@@ -18,7 +18,22 @@
   },
   "dependencies": {
     "@azure/cosmos": "^3.11.3",
+    "@types/jest": "^26.0.23",
     "install": "^0.13.0",
-    "npm": "^7.15.0"
+    "jest": "^27.0.3",
+    "npm": "^7.15.0",
+    "ts-jest": "^27.0.1"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "testMatch": [
+      "**/*.test.ts"
+    ]
   }
 }
