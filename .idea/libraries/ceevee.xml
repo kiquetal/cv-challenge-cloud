@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="ceevee">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/ceevee.zip!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
