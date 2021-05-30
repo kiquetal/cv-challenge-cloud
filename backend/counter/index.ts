@@ -29,6 +29,9 @@ const httpTrigger: AzureFunction = async function (context: Context, req: HttpRe
 
 
     context.res = {
+    headers: {
+      "Content-Type":"application/json"
+    },	    
     body:context.bindings.outputDocument
     }
 
