@@ -2,3 +2,6 @@ az storage blob upload-batch -s <source-path> -d '$web' --account-name <storage-
 
 Dont forget about connectionstring in cosmosDB, and after a function is uploaded
 
+
+ az provider register --namespace Microsoft.Cdn
+
