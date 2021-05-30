@@ -1,0 +1,47 @@
+{
+	"disabled":false,
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+
+
+  {
+      "type": "cosmosDB",
+      "name": "inputDocument",
+      "databaseName": "ToDoList",
+      "collectionName": "Counter",
+      "id":"1",
+      "partitionKey":"1",
+      "connectionStringSetting": "conDB",
+      "direction": "in"
+    },
+
+ {
+      "type": "cosmosDB",
+      "name": "outputDocument",
+      "databaseName": "ToDoList",
+      "collectionName": "Counter",
+      "id":"1",
+      "partitionKey":"1",
+      "connectionStringSetting": "conDB",
+      "direction": "out"
+    },
+
+
+
+  ],
+  "scriptFile": "../dist/counter/index.js"
+}
