@@ -25,7 +25,7 @@ jobs:
       with:
         azcliversion: 2.0.72
         inlineScript: |
-           az cdn endpoint purge --content-paths  "/*" --profile-name "cdnprofile" --name "cdnprofile" --resource-group "test"
+           az cdn endpoint purge --content-paths  "/*" --profile-name "cdnprofile" --name "azurecvchallenge" --resource-group "test"
 
   # Azure logout 
     - name: logout
